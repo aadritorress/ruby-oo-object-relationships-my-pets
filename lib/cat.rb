@@ -1,20 +1,103 @@
 
-  class Cat
+class Cat
+
+  attr_reader :name
+  attr_accessor :owner, :mood
+  @@all = []
+
+  def initialize(name, owner)
+        @name = name 
+        @owner = owner 
+        @mood = "nervous"
+        @@all << self 
+end
+
+def self.all
+  @@all 
+end 
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# class Cat
+
+#   attr_reader :name
+# attr_accessor :owner, :mood
+
+# @@all = []
+
+#   def initialize(name, owner)
+#     @name = name 
+#     @owner = owner 
+#     @mood = "nervous"
+#     @@all << self 
+#   end
+
+# def self.all
+#   @@all 
+# end 
+
+
+
+
+# end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # class Cat
   
-    attr_accessor :mood, :owner
-    attr_reader :name
+  #   attr_accessor :mood, :owner
+  #   attr_reader :name
     
-    @@all = []
+  #   @@all = []
     
-     def initialize(name, owner)
-      @name = name
-      @owner = owner
-      @mood = "nervous"
-      @@all << self 
-    end
+  #    def initialize(name, owner)
+  #     @name = name
+  #     @owner = owner
+  #     @mood = "nervous"
+  #     @@all << self 
+  #   end
     
-    def self.all
-      @@all
-    end
+  #   def self.all
+  #     @@all
+  #   end
     
-  end
+  # end
